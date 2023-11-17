@@ -151,7 +151,7 @@ text-decoration: none;
 </head>
 
 <body>
-  <header>
+   <header>
     <nav>
       <div class="left"> <p class="a_pannel" >This is admin pannel</p> 
             Welcome to Online Voting System:
@@ -161,11 +161,13 @@ text-decoration: none;
          <li><a href="">Home</a></li>
           <li><a href="../admin/admin_dashboard/add_election.php">Add election</a></li> 
           <li><a href="../admin/admin_dashboard/add_candidate.php">Add candidate</a></li>
+          <li><a href="../admin/admin_dashboard/candidate_request.php"> Candidate Request</a></li>
           <li><a href="../admin/admin_dashboard/logout.php">Logout</a></li>
         </ul>
       </div>
     </nav>
-  </header>
+  </header> 
+ 
     
   <!-- Body section  -->
 
@@ -183,7 +185,8 @@ text-decoration: none;
             <th scope="col">Starting Date</th>
             <th scope="col">Ending Date</th>
             <th scope="col">Status</th>
-            <th scope="col">Action</th>
+
+            <!-- <th scope="col">Action</th> -->
         </tr>
        </thead>
        <tbody>
@@ -201,10 +204,10 @@ text-decoration: none;
                 <td> <?php echo $row['starting_date']; ?> </td>
                 <td> <?php echo $row['ending_date']; ?> </td>
                 <td> <?php echo $row['status']; ?> </td>
-                <td>
+                <!-- <td>
                     <a href="#" class="edit">Edit</a>
                     <a href="#" class="Delete">Delete</a>
-                </td>
+                </td> -->
                 	
              </tr>
              <?php
@@ -231,7 +234,7 @@ text-decoration: none;
     <!-- body section end  -->
 
 
- <footer>
+  <footer>
   <div class="footer">
      <p>&copy; 2023 Online Voting System. All rights reserved.</p>
      <p>Developed by: XYZ from Himalaya Darsan Collage</p>
@@ -240,8 +243,8 @@ text-decoration: none;
      
 
   </div>
-  
-</footer>
+ 
+</footer> 
 </body>
 
 </html>

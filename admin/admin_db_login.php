@@ -24,10 +24,12 @@
             header("Location: admin_dashboard.php");
             exit();
         } else {
+            header("Location: admin_login.php");
             // Incorrect username or password
             echo '<script>
                     alert("Incorrect username or password");
                 </script>';
+                header("Location: admin_login.php");
         }
     }
 ?>
